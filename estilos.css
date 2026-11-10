@@ -1,9 +1,59 @@
 @charset "UTF-8";
 
-/* Formatação do menu principal */
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&display=swap');
 
-nav#menu ol {
+* {
+    background-color: rgb(255, 240, 248);
+}
+
+/* Formatação da logo */
+div.logo h2 {
+    text-align: center;
+    margin-left: 10%;
+    padding-top: 20px;
+    color: rgb(173, 96, 96);
+    font-size: 25px;
+    text-shadow: 1px 1px 2px rgb(173, 96, 96);
+    background-color: rgb(245, 207, 201);
+    font-family: "Bodoni moda" , serif;
+    font-weight: bold;
+}
+/*div.logo img {
+    width: 25%;
+    height: auto;  
+    text-align: center;
+} */
+
+/* Formatação do menu principal */
+div.logo-menu {
+    display: flex;
+    align-items: center;
+    background-color: rgb(245, 207, 201);
+    justify-content: space-between;
+    padding-right: 10%;
+    padding-bottom: 2%;
+}
+div.logo {
+    background-color: rgb(245, 207, 201);
+}
+div.menu {
+    background-color: rgb(245, 207, 201);
+}
+nav.menu ul {
     list-style: none;
-    display: inline-flex;
-    gap: 10px;
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    padding-top: 20px;
+    background-color: rgb(245, 207, 201);
+}
+nav.menu ul a {
+    color: rgb(173, 96, 96);
+    background-color: lightyellow;
+    padding: 10px;
+    border-radius: 10px;
+    text-decoration: none;
+    box-shadow: 2px 2px 5px rgb(173, 96, 96);
+    text-shadow: 2px 2px 2px rgb(245, 207, 201);
+    font-weight: bold;
 }
