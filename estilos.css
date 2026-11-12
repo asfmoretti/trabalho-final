@@ -1,9 +1,15 @@
 @charset "UTF-8";
 
 @import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Monda:wght@400..700&display=swap');
 
 * {
     background-color: rgb(255, 240, 248);
+    margin: 0;
+    padding: 0;
+}
+header#cabecalho {
+    position: fixed;
 }
 
 /* Formatação da logo */
@@ -12,17 +18,12 @@ div.logo h2 {
     margin-left: 10%;
     padding-top: 20px;
     color: rgb(173, 96, 96);
-    font-size: 25px;
+    font-size: 20px;
     text-shadow: 1px 1px 2px rgb(173, 96, 96);
     background-color: rgb(245, 207, 201);
     font-family: "Bodoni moda" , serif;
     font-weight: bold;
 }
-/*div.logo img {
-    width: 25%;
-    height: auto;  
-    text-align: center;
-} */
 
 /* Formatação do menu principal */
 div.logo-menu {
@@ -30,8 +31,9 @@ div.logo-menu {
     align-items: center;
     background-color: rgb(245, 207, 201);
     justify-content: space-between;
-    padding-right: 10%;
+    padding-right: 100%;
     padding-bottom: 2%;
+    width: 100%;
 }
 div.logo {
     background-color: rgb(245, 207, 201);
@@ -43,9 +45,10 @@ nav.menu ul {
     list-style: none;
     display: flex;
     gap: 30px;
-    align-items: center;
+    align-items: flex-end;
     padding-top: 20px;
     background-color: rgb(245, 207, 201);
+    width: 100%;
 }
 nav.menu ul a {
     color: rgb(173, 96, 96);
@@ -56,4 +59,32 @@ nav.menu ul a {
     box-shadow: 2px 2px 5px rgb(173, 96, 96);
     text-shadow: 2px 2px 2px rgb(245, 207, 201);
     font-weight: bold;
+}
+
+/* Fim da formatação do menu principal */
+
+div.texto-fotoinicial {
+    display: flex;
+    width: 100%;
+    height: 100vh;  
+    align-items: center;
+}
+div.textoinicial {
+    width: 50%;
+}
+div.textoinicial p {
+    color: rgb(173, 96, 96);
+    padding: 2%;
+    font-size: 18px;
+    font-family: "Monda", sans-serif;
+}
+div.fotoinicial {
+    float: right;
+    height: auto;
+    width: 50%;
+    display: block;
+}
+div.fotoinicial img {
+    width: 100%;
+    margin-top: 50%;
 }
