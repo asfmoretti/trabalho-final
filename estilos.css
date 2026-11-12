@@ -19,14 +19,13 @@ header#cabecalho {
     z-index: 1000;
 }
 
-
 /* Formatação da logo */
 div.logo h2 {
     text-align: center;
     margin: 0;
     padding: 0;
     color: rgb(173, 96, 96);
-    font-size: 20px;
+    font-size: 25px;
     text-shadow: 1px 1px 2px rgb(173, 96, 96);
     background-color: rgb(245, 207, 201);
     font-family: "Bodoni moda" , serif;
@@ -35,11 +34,14 @@ div.logo h2 {
 
 /* Formatação do menu principal */
 div.logo-menu {
+    position: relative;
     display: flex;
     align-items: center;
-    background-color: rgb(245, 207, 201);
-    justify-content: space-between;
+    justify-content: flex-start;
     width: 100%;
+    min-height: 120px;
+    padding: 10px 30px;
+    background-color: rgb(245, 207, 201);
     box-sizing: border-box;
 }
 div.logo {
@@ -89,12 +91,23 @@ div.texto-fotoinicial {
 }
 div.textoinicial {
     width: 50%;
+    transform: translateY(-60px);
 }
 div.textoinicial p {
     color: rgb(173, 96, 96);
     padding: 2%;
     font-size: 18px;
     font-family: "Monda", sans-serif;
+}
+div.textoinicial a {
+    color: rgb(245, 207, 201);
+    padding: 2%;
+    font-size: 15px;
+    font-family: "Monda", sans-serif;
+    text-decoration: none;
+    background-color: rgb(173, 96, 96);
+    border-radius: 30px;
+    text-align: center;
 }
 div.fotoinicial {
     width: 50%;
@@ -104,17 +117,51 @@ div.fotoinicial img {
     aspect-ratio: 3 / 4;
     display: block;
 }
-h3.destaques{
-    margin-top: 30px;
+
+/* Formatação da área destaques da tela inicial */
+h3.especialidades {
+    font-size: 35px;
+    margin-top: 60px;
+    text-align: center;
+    color: rgb(173, 96, 96);
+    text-shadow: 1px 1px 1px rgb(245, 207, 201);
 }
-div.logo-menu {
-    position: relative !important;
+p.especialidades {
+    color: rgb(173, 96, 96);
+    padding: 2%;
+    font-size: 18px;
+    font-family: "Monda", sans-serif;
+}
+nav.especialidades ul {
+	max-width: 100%;
+	margin: auto;
+	padding: 50px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 60px;
+}
+nav.especialidades li {
+    width: 300px;
+	height: 400px;
+	background: var(--img) center / cover no-repeat;
+	position: relative;
+	border: solid 2px rgb(245, 207, 201);
+	border-radius: 10px;
+	transition: 0.3s;
+	box-shadow: 5px 3px 5px rgb(173, 96, 96);
+    list-style: none;
+    font-family: "Monda", sans-serif;
+}
+nav.especialidades li:hover {
+    transform: scale(1.2);
+	z-index: 10;
+}
+nav.especialidades span {
+    font-size: 20px;
+    background-color: rgb(173, 96, 96, 0.7);
+    color: rgb(245, 207, 201); 
+    border-radius: 10px;
     display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    width: 100%;
-    min-height: 120px;
-    padding: 10px 30px;
-    background-color: rgb(245, 207, 201);
-    box-sizing: border-box;
+    justify-content: center;
 }
