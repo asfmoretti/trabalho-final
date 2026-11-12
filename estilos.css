@@ -4,19 +4,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Monda:wght@400..700&display=swap');
 
 * {
-    background-color: rgb(255, 240, 248);
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+body#corpo {
+    background-color: rgb(255, 240, 248);
 }
 header#cabecalho {
     position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
 }
+
 
 /* Formatação da logo */
 div.logo h2 {
     text-align: center;
-    margin-left: 10%;
-    padding-top: 20px;
+    margin: 0;
+    padding: 0;
     color: rgb(173, 96, 96);
     font-size: 20px;
     text-shadow: 1px 1px 2px rgb(173, 96, 96);
@@ -31,26 +39,37 @@ div.logo-menu {
     align-items: center;
     background-color: rgb(245, 207, 201);
     justify-content: space-between;
-    padding-right: 100%;
-    padding-bottom: 2%;
     width: 100%;
+    box-sizing: border-box;
 }
 div.logo {
     background-color: rgb(245, 207, 201);
 }
 div.menu {
     background-color: rgb(245, 207, 201);
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    transform: translateY(-50px);
+}
+nav.menu {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    transform: translateY(-30px);
+    padding-right: 5%;
 }
 nav.menu ul {
-    list-style: none;
     display: flex;
+    align-items: center;
+    justify-content: flex-end;
     gap: 30px;
-    align-items: flex-end;
-    padding-top: 20px;
+    list-style: none;
     background-color: rgb(245, 207, 201);
-    width: 100%;
 }
 nav.menu ul a {
+    display: block;
     color: rgb(173, 96, 96);
     background-color: lightyellow;
     padding: 10px;
@@ -66,7 +85,6 @@ nav.menu ul a {
 div.texto-fotoinicial {
     display: flex;
     width: 100%;
-    height: 100vh;  
     align-items: center;
 }
 div.textoinicial {
@@ -79,12 +97,24 @@ div.textoinicial p {
     font-family: "Monda", sans-serif;
 }
 div.fotoinicial {
-    float: right;
-    height: auto;
     width: 50%;
-    display: block;
 }
 div.fotoinicial img {
     width: 100%;
-    margin-top: 50%;
+    aspect-ratio: 3 / 4;
+    display: block;
+}
+h3.destaques{
+    margin-top: 30px;
+}
+div.logo-menu {
+    position: relative !important;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    min-height: 120px;
+    padding: 10px 30px;
+    background-color: rgb(245, 207, 201);
+    box-sizing: border-box;
 }
