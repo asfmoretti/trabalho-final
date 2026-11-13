@@ -8,15 +8,21 @@
     padding: 0;
     box-sizing: border-box;
 }
-body#corpo {
-    background-color: rgb(255, 240, 248);
-}
 header#cabecalho {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     z-index: 1000;
+}
+body#corpo {
+    background-color: rgb(255, 240, 248);
+}
+footer#rodape {
+    background-color: rgb(245, 207, 201);
+    width: 100%;
+    margin: 0;
+    padding: 0;
 }
 
 /* Formatação da logo */
@@ -221,4 +227,80 @@ table.horario th , td {
 }
 table.horario th:hover , td:hover {
     background-color: rgb(173, 96, 96);
+}
+
+/* Formatação do rodapé */
+div.rodape {
+    display: flex;
+    flex-direction: row;
+    gap: 80px;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+div.titulos-rodape h4 {
+    font-size: 30px;
+    padding-top: 2%;
+    padding-left: 2%;
+    color: rgb(173, 96, 96);
+    text-shadow: 1px 1px 2px rgb(173, 96, 96)
+}
+div.navegacao {
+    width: 33%;
+}
+div.navegacao ul {
+    margin: 2%;
+    list-style: none;
+}
+div.navegacao li {
+    padding: 10px;
+    align-items: center;
+    display: flex;
+    margin-bottom: 8px;
+}
+div.logo {
+    width: 40%;
+}
+div.redes {
+    width: 33%;
+}
+div.redes ul {
+    margin: 2%;
+    list-style: none;
+}
+div.redes li {
+    padding: 10px;
+    align-items: center;
+    display: flex;
+    margin-bottom: 8px;
+    gap: 10px;
+    color: rgb(173, 96, 96);
+}
+div.redes li::before {
+    content: "";
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+li.whatsapp::before {
+    background-image: url(imagens/whatsapp.png);
+}
+li.instagram::before {
+    background-image: url(imagens/instagram.png);
+}
+li.facebook::before {
+    background-image: url(imagens/facebook.png);
+}
+li.email::before {
+    background-image: url(imagens/email.png);
+}
+div.navegacao a {
+    text-decoration: none;
+    color: rgb(173, 96, 96);
+    font-weight: bold;
+}
+div.logo img {
+    width: 50%;
 }
