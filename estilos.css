@@ -316,16 +316,25 @@ div.logo img {
 /* Formatação da aba sobre */
 h3.titulos-sobre {
     margin-top: 60px;
+    margin-bottom: 20px;
     font-size: 35px;
     text-align: center;
     color: rgb(173, 96, 96);
     text-shadow: 1px 1px 1px rgb(245, 207, 201);
 }
-p.textos-sobre {
+div.textos-sobre p , p.textos-sobre {
     text-align: justify;
-    padding: 2%;
+    padding: 1%;
     color: rgb(173, 96, 96);
     font-family: "Monda", sans-serif;
+    font-size: 20px;
+    margin: 1%;
+}
+div.textos-sobre h4 {
+    font-family: "Monda", sans-serif;
+    text-align: center;
+    color: rgb(173, 96, 96);
+    text-shadow: 1px 1px 1px rgb(245, 207, 201);
     font-size: 20px;
 }
 figure.salaosobre {
@@ -342,4 +351,10 @@ div.video-textosobre {
     display: flex;
     flex-direction: row;
     margin: 1%;
+    gap: 30px;
+}
+div.videosalao iframe {
+    border: 5px solid rgb(245, 207, 201);
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px rgb(173, 96, 96);
 }
