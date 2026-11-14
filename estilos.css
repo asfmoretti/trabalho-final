@@ -312,3 +312,34 @@ div.navegacao a {
 div.logo img {
     width: 50%;
 }
+
+/* Formatação da aba sobre */
+h3.titulos-sobre {
+    margin-top: 60px;
+    font-size: 35px;
+    text-align: center;
+    color: rgb(173, 96, 96);
+    text-shadow: 1px 1px 1px rgb(245, 207, 201);
+}
+p.textos-sobre {
+    text-align: justify;
+    padding: 2%;
+    color: rgb(173, 96, 96);
+    font-family: "Monda", sans-serif;
+    font-size: 20px;
+}
+figure.salaosobre {
+    display: flex;
+    justify-content: center;
+}
+figure.salaosobre img {
+    width: 90%;
+    border-radius: 20px;
+    border: 5px dashed rgb(173, 96, 96);
+    box-shadow: 5px 5px 5px rgb(245, 207, 201);
+}
+div.video-textosobre {
+    display: flex;
+    flex-direction: row;
+    margin: 1%;
+}
