@@ -376,7 +376,7 @@ p.equipe {
 }
 div.equipe {
     display: grid;
-    grid-template-columns: repeat(3, 280px);
+    grid-template-columns: repeat(3, 300px);
     justify-content: center;
     gap: 50px;
 }
@@ -386,6 +386,8 @@ div.funcionario {
     border-radius: 12px;
     overflow: hidden;
     transition: 0.3s;
+    margin-bottom: 2%;
+    box-shadow: 3px 3px 3px rgb(173, 96, 96);
 }
 div.funcionario:hover {
     transform: translateY(-5px);
